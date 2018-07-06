@@ -1,0 +1,3 @@
+site/* linguist-vendored
+templates/* linguist-vendored
+*.js linguist-language=javascript

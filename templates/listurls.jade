@@ -1,0 +1,12 @@
+extends ./layout.jade
+
+block content
+   each url in urls
+      table(style='width:100%')
+      tr
+         td #{url.original_url}
+         br
+         td localhost:3000/l/#{url.slug}
+         br
+         td #{url.redirects}
+

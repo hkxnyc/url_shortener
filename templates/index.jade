@@ -1,0 +1,13 @@
+extends ./layout.jade
+
+block content
+    p #{ msg }
+    form(method='post', action='/')
+        input(type='text', name='url', placeholder='Url',required='required')
+        select(name='device')
+            option(value='All') All
+            option(value='Desktop') Desktop
+            option(value='Mobile') Mobile
+            option(value='Tablet') Tablet
+            option(value='Handheld') Handheld (Mobile & Tablet)
+        button(type='submit') Shorten
